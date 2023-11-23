@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Activities</title>
+
+    {% load static %}
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+     <!-- link file css -->
+    <link rel="stylesheet" href="{% static 'home/css/abdumalik.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+ 
+<style>
+  .main .slider .slides:nth-child(1){
+    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('{% static "home/img/9.jpg" %}');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .main .slider .slides:nth-child(2){
+    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('{% static "home/img/8.jpg" %}');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .main .slider .slides:nth-child(3){
+    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('{% static "home/img/7.jpg" %}');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .main .slider .slides:nth-child(4){
+    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('{% static "home/img/6.jpg" %}');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+  .main .slider .slides:nth-child(5){
+    background:linear-gradient(rgba(0, 0, 0, 0.35),rgba(0, 0, 0, 0.35)),url('{% static "home/img/5.jpg" %}');
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+    background-repeat:no-repeat;
+  }
+</style>
+   
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+              <h2 class="bol">51-school</h2>
+            <nav>
+                <ul>
+                   <li><a href="{% url 'index' %}">Home  </a></li>
+                   <li><a href="{% url 'lib' %}">Library</a></li>
+                   <li><a href="{% url 'home' %}">Active hall</a></li>
+                   <li><a href="#">login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="main">
+            <div class="slider" id="slider">
+              <div class="slides current">
+                <h1>Debate</h1>
+                <p>Discussing the needs of new technologies for our school.</p>
+              </div>
+              <div class="slides">
+                <h1>Zakovat tournament</h1>
+                <p>Questionnaries among students and teachers.</p>
+              </div>
+              <div class="slides">
+                <h1></h1>
+                <p>All the answers are being collected by the Counselor.</p>
+              </div>
+              <div class="slides">
+                <h1>Teachers team</h1>
+                <p></p>
+              </div>
+              <div class="slides slidelast">
+                <h1>Students team</h1>
+                <p></p>
+              </div>
+            </div>
+            <i class="fa fa-angle-left prev" id="prev"></i>
+            <i class="fa fa-angle-right next" id="next"></i>
+          </div><br><br><br>
+          <img   text-align="center" class="love" src="{% static 'home/img/rk.jpg' %}" alt="">  
+    
+      <p class="man">Marathon among school students in order to stay healthy and presenting the benefits of running to our society. </p>
+
+            <!-- Swiper --><br><br><br><br><br><br><br><br><br>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="{% static 'home/img/20.jpg' %}" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="{% static 'home/img/21.jpg' %}" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="{% static 'home/img/22.jpg' %}" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="{% static 'home/img/23.jpg' %}" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="{% static 'home/img/24.jpg' %}" alt="">
+      </div>
+
+
+      <!-- 15 div -->br
+
+    </div>
+  
+  </div>
+
+
+
+     
+ <!-- script -->
+ <script type="text/javascript" src="{% static 'home/js/mains.js' %}"></script>
+   <!-- Swiper JS -->
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    </div>
+</body>
+</html>
